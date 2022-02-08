@@ -1,0 +1,129 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__nft {
+    background-color: hsl(216, 50%, 16%);
+    width: 400px;
+    margin: 1rem;
+    border-radius: 20px;
+}
+
+.card__nft--img {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.card__nft--img img {
+    width: calc(100% - 15%);
+    height: calc(100% - 15%);
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+.view {
+    background-image: url("../images/icon-view.svg");
+    opacity: 0;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    top: 43%;
+    left: 45%;
+}
+
+.card__nft--img:hover .view {
+    opacity: 1;
+}
+
+.card__nft--img:hover img {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.card__bft__description {
+    width: calc(100% - 15%);
+    margin: auto;
+}
+
+.card__bft__description--title {
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.card__bft__description--title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.card__nft__description__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__bft__description--body,
+.card__nft__description__footer--date {
+    color: hsl(215, 32%, 27%);
+}
+
+.card__nft__description__footer--price {
+    color: hsl(178, 100%, 50%);
+}
+
+.card__nft__footer {
+    margin: 1rem;
+}
+
+.card__nft__footer {
+    height: 50px;
+    display: flex;
+    border-top: solid 1px hsl(215, 32%, 27%);
+    padding-top: 2rem;
+}
+
+.card__nft__footer--img {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__nft__footer--img img {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+}
+
+.card__nft__footer--author {
+    padding: 5px;
+    padding-right: 10px;
+}
+
+.card__nft__footer--author span:first-child {
+    color: hsl(215, 32%, 27%);
+}
+
+.card__nft__footer--author:nth-child(2) {
+    color: white;
+}
+
+.card__nft__footer--author:nth-child(2):hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
